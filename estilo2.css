@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+*{margin:0;}
+body {
+	 background-color:#333333;
+}
+
+
+header,img{
+	width:100%;	
+}
+
+nav{
+	width: 100%;
+	height: 40px;
+	background-color:#CDB84A;
+	text-align:right;
+	padding-top:10px;
+	padding-bottom: 10px;
+	font-family: 'Roboto';
+}
+
+a{
+	font:1.2rem 'Roboto',bold;
+	color:#FFFFFF;
+	text-decoration: none;
+	text-align: right;
+}
+
+.a-menu{
+	margin-right: 40px;
+	font-weight: bold;
+	text-align: right;
+}
+
+article{
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box; 
+}
+.a-menu:link, .a-menu:visited{
+	color:black;
+}
+.a-menu:hover, .a-menu:active{
+	color:white;
+
+}
+
+h1{
+	font-family: 'Paprika', cursive !important;
+	color:#CDB84A;
+	text-align:left;
+	margin-bottom: 20px;
+	margin: 5px 20px 15px 20px;
+}
+
+p{
+	font-family: 2rem, 'Rajdhani', sans-serif;
+	color:#FFF;
+	text-align:justify;
+	text-indent: 20px;
+	line-height: 25px;
+	margin: 0 20px 0 20px;
+}
+
+section{
+	padding:20px;
+}
+
+h2{
+	font-family: 'Paprika', cursive !important;
+	color:#CDB84A;
+	margin: 5px 20px 15px 20px;
+	text-align:left;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+#navlado{
+	width: 10%;
+	height:500px;
+	background-color:#CDB84A;
+	float:left;
+	padding-top:10px;
+	padding-bottom: 10px;
+	font-family: 'Roboto';
+}
+.a-navlado-menu{
+	font-family: 'Paprika', cursive !important;
+	text-align: center;
+	color: #FFF;
+	background-color: #5c8032;
+	width: 100%;
+	height: 50px;
+	padding: 15px;
+}
+.a-navlado{
+	display:block;
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+	margin: 5px 0 5px 0;
+	background-color: #8BC34A;
+	color:#333333;
+	border: 2;
+	border-radius: 5px;
+}
+.a-navlado:hover{
+	color: #FFFFFF;
+	background-color: #5c8032;
+}
+main{
+     width: 60%;
+     float: left;
+     height:500px;
+	 background-color:#777;
+}
+.container{
+	display: flex;
+}
+.pao-caseiro-mostrar{
+	display: block;
+}
+.pao-caseiro-esconder{
+	display: none;
+}
+.rosca-mostrar {
+	display: block;
+}
+.rosca-esconder {
+	display: none;
+}
+.bolo-mostrar {
+	display: block;
+}
+.bolo-esconder {
+	display: none;
+}
+.biscoito-mostrar {
+	display: block;
+}
+.biscoito-esconder {
+	display: none;
+}
+.card{
+	background-color: #FFF;
+	margin: 10px;
+	width:100%;
+	height: auto;
+	border-radius:8px;
+	box-shadow: 10px 10px 10px #777;
+	transition:0.5;
+}
+.card:hover{
+	box-shadow: 0 8px 16px #CCC
+}
+.card-preco{
+	text-align: right;
+	font:15px 'Roboto', bold;
+	font-weight: 700;
+	float: right;
+}
+
+.card-alinhamento{
+	padding: 15px;
+}
+
+.card-produto{
+	text-align: left;
+	font: 15px 'Roboto', bold;
+	font-weight: 700;
+}
+
+h3{
+	font: 2rem "Roboto", bold;
+	color:#AC1111;
+	text-align:left;
+	margin-bottom: 10px;
+}
+.card-content p{
+	font:1rem 'Roboto', sans-serif;
+	line-height: 20px;
+}
+aside {
+     width: 30%;
+     float: left;
+     height:500px;
+	 background-color:#FFF;
+}
+aside p{
+	color: #333333;
+	text-align: center;
+}
+.meu-pedido{
+	text-align: center;
+	font-family: 'Paprika', cursive !important;
+	text-align: center;
+	color: #FFF;
+	background-color: #5c8032;
+	width: 100%;
+	height: 50px;
+	padding: 15px;
+	
+}
+.icone-compra-mostrar{
+	margin-top: 15px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 100px;
+}
+.icone-compra-esconder{
+	display: none;;
+}
+.texto-icone-compra-mostrar{
+	display: block;
+}
+.texto-icone-compra-esconder{
+	display: none;
+}
+.itens-pedido{
+	scroll-behavior: auto;
+	max-height: 250px;
+}
+.total{
+	text-align: left;
+	margin-left: 20px;
+}
+footer{
+	background-color: #333333;
+	padding: 15px;
+	
+}
+footer p{
+	text-align: center;
+	color: #FFF;
+}
+
+footer a:hover{
+	color:#FFF;
+}
+
+form{
+		width:400px;
+		margin: 0 auto;
+	}
+
+input, textarea, select{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #c4c4c4;
+	text-align: center;
+}
+label, fieldset, input, textarea, select{
+	font:1rem 'Roboto', sans-serif;
+	text-align: center;
+}
+fieldset{
+	border: 1px solid #CCC;
+	margin-bottom: 10px;
+	display: flex;
+}
+fieldset legend {
+	text-align: left;
+}
+
+input[type="radio"]{
+	width: 15px;
+	height: 15px;
+	margin-left: 50px;
+}
+
+textarea{
+	height: 80px;
+	text-align: left;
+}
+
+#botoes{
+	display:flex;
+}
+
+input[type="submit"], input[type="reset"]{
+	display:block;
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+	margin: 5px 0 5px 0;
+	background-color: #8BC34A;
+	color:#333333;
+	border: 2;
+	border-radius: 5px;
+	height: 50px;
+}
+input[type="submit"]:hover, input[type="reset"]{
+	color: #FFFFFF;
+	background-color: #5c8032;
+}
+
+input[type="reset"]{
+	background-color: #F47E7E;
+}
+
+#id01{
+     display: none;
+}
+

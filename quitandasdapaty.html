@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Nossa historia</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content= "Patricia Derrico"/>
+		<meta name= "keyboards comercio de paes, roscas doces e bolos caseiros"/>
+		<meta name= "description content paes caseiros"/>
+		<link rel="stylesheet" type="text/css" href="estilo2.css"/>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<nav>
+			<a class= "a-menu" href="#">HOME</a>
+			<a class= "a-menu" href="#pag-sobre">SOBRE</a>
+			<a class= "a-menu" href="#pag-produtos">PRODUTOS</a>
+		</nav>
+		<header>
+			<img src="img/ilpane.png"width="100%" />
+		</header>
+		<article>
+			<h1> Nossa História</h1>
+			<p>
+				Em tempos de pandemia, muitos profissionais tiveram de se reinventar e transformar o isolamento forçado em oportunidade para novos negócios. Assim nasceu a quitandas da Paty.
+				Com o pão artesanal de alta qualidade, criamos um serviço com foco em solução para o cliente. Nossos pães, roscas, biscoitos e bolos são frescos, feitos em fornadas planejadas apenas uma vez por semana.
+			</p>
+		</article>
+		<section id="pag-produtos">
+			<h2>Produtos</h2>
+			<p>Nossos produtos sÃo feitos com imenso carinho e qualidade para você!</p>
+			<p>O prazer das coisas simples da vida!!!</p>
+		</section>
+		<nav id="navlado">
+			<div class="a-navlado-menu">MENU</div>
+			<button class= "a-navlado" onclick="mostrarPaoCaseiro()">Pão Caseiro</button>
+			<button class= "a-navlado" onclick="mostrarRosca()">Rosca</button>
+			<button class= "a-navlado" onclick="mostrarBolo()">Bolo</button>
+			<button class= "a-navlado" onclick="mostrarBiscoito()">Biscoito</button>
+		</nav>
+		<main>
+			<div class="container">
+				<div class="card pao-caseiro-mostrar">
+					<img src="img/paocaseiro.png" alt="imagem contendo pao"/>
+					<div class="card-content card-alinhamento">
+						<span class="card-produto">Pão Caseiro</span>
+						<span class="card-produto">R$ 10,00</span>
+						<i onclick="adicionarItemPedido('Pão Caseiro', 'R$ 10,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card pao-caseiro-mostrar">
+					<img src="img/Baguete.png" alt="imagem contendo baguete"/>
+					<div class="card-content card-alinhamento">
+						<span class="card-produto">Baguete</span>
+						<span class="card-produto">R$ 10,00</span>
+						<i onclick="adicionarItemPedido('Baguete', 'R$ 10,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card pao-caseiro-mostrar">
+					<img src="img/paointegral.png" alt="imagem contendo pão integral"/>
+					<div class="card-content card-alinhamento">
+						<span class="card-produto">Pão Integral</span>
+						<span class="card-produto">R$ 8,00</span>
+						<i onclick="adicionarItemPedido('Pão Integral', 'R$ 8,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card pao-caseiro-mostrar">
+					<img src="img/Croissant.png" alt= "imagem contendo croissant"/>
+					<div class="card-content card-alinhamento"> 
+						<span class="card-produto">Croissant</span>
+						<span class="card-produto">R$ 12,00</span>
+						<i onclick="adicionarItemPedido('Croissant', 'R$ 12,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card rosca-esconder">
+					<img src="img/roscamorango.png" alt="imagem contendo rosca de morango"/>
+					<div class="card-content card-alinhamento">
+						<span class="card-produto">Rosca de Morango</span>
+						<span class="card-produto">R$ 10,00</span>
+						<i onclick="adicionarItemPedido('Rosca de Morango', 'R$ 10,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card rosca-esconder">
+					<img src="img/roscalaranja.png" alt="imagem contendo rosca de laranja"/>
+					<div class="card-content card-alinhamento">
+						<span class="card-produto">Rosca de Laranja</span>
+						<span class="card-produto">R$ 10,00</span>
+						<i onclick="adicionarItemPedido('Rosca de Laranja', 'R$ 10,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card rosca-esconder">
+					<img src="img/roscachocolate.png" alt="imagem contendo rosca de chocolate"/>
+					<div class="card-content card-alinhamento">
+						<span class="card-produto">Rosca de Chocolate</span>
+						<span class="card-produto">R$ 8,00</span>
+						<i onclick="adicionarItemPedido('Rosca de Chocolate', 'R$ 8,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card rosca-esconder">
+					<img src="img/rosca.jpg" alt= "imagem contendo rosca com creme"/>
+					<div class="card-content card-alinhamento"> 
+						<span class="card-produto">Rosca com Creme</span>
+						<span class="card-produto">R$ 12,00</span>
+						<i onclick="adicionarItemPedido('Rosca com Creme', 'R$ 12,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card bolo-esconder">
+					<img src="img/bolo.png" alt="imagem contendo bolo de chocolate"/>
+					<div class="card-content card-alinhamento">
+						<span class="card-produto">Bolo de Chocolate</span>
+						<span class="card-produto">R$ 10,00</span>
+						<i onclick="adicionarItemPedido('Bolo de Chocolate', 'R$ 10,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card bolo-esconder">
+					<img src="img/bolofrutas.png" alt="imagem contendo bolo de frutas vermelhas"/>
+					<div class="card-content card-alinhamento">
+						<span class="card-produto">Bolo de Frutas Vermelhas</span>
+						<span class="card-produto">R$ 10,00</span>
+						<i onclick="adicionarItemPedido('Bolo de Frutas Vermelhas', 'R$ 10,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card bolo-esconder">
+					<img src="img/bololimao.png" alt="imagem contendo bolo de limão"/>
+					<div class="card-content card-alinhamento">
+						<span class="card-produto">Bolo de Limão</span>
+						<span class="card-produto">R$ 8,00</span>
+						<i onclick="adicionarItemPedido('Bolo de Limão', 'R$ 8,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card bolo-esconder">
+					<img src="img/bolomorango.png" alt= "imagem contendo bolo de morango"/>
+					<div class="card-content card-alinhamento"> 
+						<span class="card-produto">Bolo de Morango</span>
+						<span class="card-produto">R$ 12,00</span>
+						<i onclick="adicionarItemPedido('Bolo de Morango', 'R$ 12,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card biscoito-esconder">
+					<img src="img/biscoitoaveia.png" alt="imagem contendo biscoito de aveia"/>
+					<div class="card-content card-alinhamento">
+						<span class="card-produto">Biscoito de Aveia</span>
+						<span class="card-produto">R$ 10,00</span>
+						<i onclick="adicionarItemPedido('Biscoito de Aveia', 'R$ 10,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card biscoito-esconder">
+					<img src="img/biscoitochocolate.png" alt="imagem contendo biscoito de chocolate"/>
+					<div class="card-content card-alinhamento">
+						<span class="card-produto">Biscoito de Chocolate</span>
+						<span class="card-produto">R$ 10,00</span>
+						<i onclick="adicionarItemPedido('Biscoito de Chocolate', 'R$ 10,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card biscoito-esconder">
+					<img src="img/canoli.png" alt="imagem contendo cannoli"/>
+					<div class="card-content card-alinhamento">
+						<span class="card-produto">Cannoli</span>
+						<span class="card-produto">R$ 8,00</span>
+						<i onclick="adicionarItemPedido('Cannoli', 'R$ 8,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+				<div class="card biscoito-esconder">
+					<img src="img/macarons.png" alt= "imagem contendo macarons"/>
+					<div class="card-content card-alinhamento"> 
+						<span class="card-produto">Macarons</span>
+						<span class="card-produto">R$ 12,00</span>
+						<i onclick="adicionarItemPedido('Macarons', 'R$ 12,00')" class="card-preco fa fa-plus-square"></i>
+					</div>
+				</div>
+			</div>
+		</main>
+		<aside>
+			<div class="pedido">
+				<div class="meu-pedido">MEU PEDIDO</div>
+				<img class="icone-compra-mostrar" src="img/iconecompra.png" >
+				<p class="texto-icone-compra-mostrar">Navegue pelo nosso menu e comece <br>a adicionar itens ao seu pedido</p>
+				<div class="itens-pedido">
+
+				</div>
+				<hr />
+				<p class="total">TOTAL</p>
+			</div>
+			<div id="botoes">
+				<input type= "submit" name= "btn-fazerpedido" value="FAZER PEDIDO" onclick="document.getElementById('id01').style.display='block'" />
+			</div>
+		</aside>
+		<footer>
+			<p>Desenvolvido por
+				<a href="http://instagram.com/patriciaderrico" target="_blank">Patrícia Derrico
+				</a>
+			</p>
+		</footer>
+		<div id="id01" class="w3-modal">
+			<div class="w3-modal-content">
+				<header class="w3-container w3-teal">
+					<span onclick="document.getElementById('id01').style.display='none'" 
+						class="w3-button w3-display-topright">&times;</span>
+					<h2>Encomendas:</h2>
+				</header>
+				<div class="w3-container">
+					<p>
+						Encomende suas gostosuras aqui:
+					</p>
+					<form name="" method="" action="">
+						<label for="nome"> Nome:</label>
+						<input id="nome" type="text" name="nome_completo" size="80" placeholder="Digite seu nome completo" required/></br>
+						<label for="email">E-mail:</label>
+						<input id= "email" type="email" name="email" size="80" placeholder="nomeusuario@email.com"/></br>
+						<label for="endereco">Endereço:</label>
+						<input id= "endereco" type="text" name="endereco" size="80" placeholder="Digite seu endereço"/></br>
+						<label for="bairro">Bairro:</label>
+						<input id= "bairro" type="text" name="bairro" size="80" placeholder="Digite seu bairro"/></br>
+						<label for="cidade">Cidade:</label>
+						<input id= "cidade" type="text" name="cidade" size="80" placeholder="Digite sua cidade"/></br>
+						<label for="UF">Estado:</label>
+						<select id="UF" name="UF">
+							<option value="">Selecione</option>
+							<option value="AC">Acre</option>
+							<option value="AL">Alagoas</option>
+							<option value="AP">Amapá</option>
+							<option value="AM">Amazonas</option>
+							<option value="BA">Bahia</option>
+							<option value="CE">Ceará</option>
+							<option value="DF">Distrito Federal</option>
+							<option value="ES">Espirito Santo</option>
+							<option value="GO">Goiás</option>
+							<option value="MA">Maranhão</option>
+							<option value="MS">Mato Grosso do Sul</option>
+							<option value="MT">Mato Grosso</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="PA">Pará</option>
+							<option value="PB">Paraíba</option>
+							<option value="PR">Paraná</option>
+							<option value="PE">Pernambuco</option>
+							<option value="PI">Piauí</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="RN">Rio Grande do Norte</option>
+							<option value="RS">Rio Grande do Sul</option>
+							<option value="RO">Rondônia</option>
+							<option value="RR">Roraima</option>
+							<option value="SC">Santa Catarina</option>
+							<option value="SP">São Paulo</option>
+							<option value="SE">Sergipe</option>
+							<option value="TO">Tocantins</option>
+						</select>
+						<label for="celular">Celular:</label>
+						<input id= "celular" type="tel" name="celular" size="80" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d[5}[-\s]\d{4}.*?$"/></br>
+						<fieldset >
+							<legend>Forma Retirada:</legend>
+							<input id="Delivery" type="radio" name="Retirada" >
+							<label value="Delivery">&nbsp;Delivery</label><br/>
+							<input id= "Retirar-no-local" type="radio" name="Retirada">
+							<label value="retirada no local">&nbsp;Retirar no Local</label>
+						</fieldset>
+						<fieldset >
+							<legend>Forma de Pagamento:</legend>
+							<input id="debito" type="radio" name="forma-pagamento" >
+							<label value="debito">&nbsp;Débito</label><br/>
+							<input id= "credito" type="radio" name="forma-pagamento">
+							<label value="credito">&nbsp;Crédito</label>
+						</fieldset>
+						<label for="celular">Comentário:</label>
+						<textarea id= "msg" cols= "80" rows= "4" ></textarea>
+						<div id= "botoes">
+							<input type= "submit" name= "btn-agenda" value= AGENDAR />
+							<input type= "reset" name= "btn-cancelar" value="CANCELAR" onclick="document.getElementById('id01').style.display='none'" /> 
+						</div>
+					</form>
+				</div>
+				<footer class="w3-container w3-teal">
+					<p>Modal Footer</p>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+	var totalPedido = 0;
+
+	function produto(produto, show) {
+		const visibilidade = show === 'esconder' ? 'mostrar' : 'esconder';
+		const prod = [...document.getElementsByClassName(`${produto}-${visibilidade}`)];
+		if (prod.length) {
+			prod.map(element => {
+				element.className = `card ${produto}-${show}`;
+			});
+		}
+	}
+
+	function mostrarPaoCaseiro() {
+		produto('pao-caseiro', 'mostrar');
+		produto('rosca', 'esconder');
+		produto('bolo', 'esconder');
+		produto('biscoito', 'esconder');
+	}
+
+	function mostrarRosca() {
+		produto('pao-caseiro', 'esconder');
+		produto('rosca', 'mostrar');
+		produto('bolo', 'esconder');
+		produto('biscoito', 'esconder');
+	}
+
+	function mostrarBolo() {
+		produto('pao-caseiro', 'esconder');
+		produto('rosca', 'esconder');
+		produto('bolo', 'mostrar');
+		produto('biscoito', 'esconder');
+	}
+
+	function mostrarBiscoito() {
+		produto('pao-caseiro', 'esconder');
+		produto('rosca', 'esconder');
+		produto('bolo', 'esconder');
+		produto('biscoito', 'mostrar');
+	}
+
+	function adicionarItemPedido(produto, valor) {
+		let limite = document.querySelector('.itens-pedido').childElementCount === 10;
+		if (limite) {
+			alert('O limite máximo de produto são 10 unidades');
+		} else {
+			let pTag = document.createElement("p");
+			pTag.innerHTML = `${produto} - ${valor}`;
+			document.getElementsByClassName('itens-pedido')[0].appendChild(pTag)
+			let valorConvertido = parseFloat(valor.replace('R$ ', '').replace(',', '.'));
+			adicionarValorPedido(valorConvertido);
+		}
+	}
+
+	function adicionarValorPedido(valor) {
+		totalPedido += valor;
+		document.getElementsByClassName('total')[0].innerHTML = `TOTAL - R$ ${totalPedido},00`;
+	}
+
+	document.addEventListener("click", (event) => {
+		let contemPedido = document.querySelector('.itens-pedido').childElementCount > 0;
+	  if (contemPedido) {
+		  document.getElementsByClassName('icone-compra-mostrar')[0].className = 'icone-compra-esconder';
+		  document.getElementsByClassName('texto-icone-compra-mostrar')[0].className = 'texto-icone-compra-esconder'
+	  }
+	});
+</script>
